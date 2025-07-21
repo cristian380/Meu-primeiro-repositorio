@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fivacon.png"image>
+    <link rel="stylesheet" href="css.css">
+    <title>social</title>
+</head>
+<body>
+    <h1>Minhas redes sociais</h1>
+    <h2>Quem sou eu?</h2>
+    <source media="(max-width:750px)" 
+    srcset="foto de perfil.jpg" type="image/png">
+    <source media="(max-width:1050px)" srcset="c:\Users\cristian\Downloads\ProjetoCristian\Imagem do WhatsApp de 2024-10-14 2 à(s) 20.25.48_32b9141c.jpg" type="image/png">
+    
+    <img src="foto de perfil.jpg" alt="Foto de perfil">  
+
+    <p>Meu nome é <strong>Cristian</strong>, sou estudante de escola pública desde sempre. Produzo conteúdo no meu Instagram e TikTok, e no momento estou aprendendo HTML5 e CSS3. Estou gostando muito e pretendo trabalhar na construção de sites.</p>
+  
+    <h1>Como falar comigo?</h1>
+    <ul>
+        <li>
+            <a href="https://www.instagram.com/cristian.rj._/" class="social-link">
+                <img src="seila.png" alt="seila.png">
+                <span><strong>ㅤㅤㅤㅤㅤcristian.rj._</strong></span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.tiktok.com/@_cristianjr__" class="social-link">
+                <img src="tiktok.png" alt="TikTok.png">
+                <span><strong>ㅤㅤㅤㅤㅤ_cristianjr__</strong> </span>
+            </a>
+        </li>
+         <li>
+            <a href="https://api.whatsapp.com/send/?phone=5521997243123&text&type=phone_number&app_absent=0" class="social-link">
+                <img src="zap2.png" alt="zap2.png">
+                <span><strong>ㅤ ㅤㅤ ㅤ Whatsapp</strong></span>
+            </a>
+        </li>
+    </ul>
+
+    <script>
+        document.querySelectorAll("li").forEach(item => {
+            item.addEventListener("click", () => {
+                item.classList.add("clicked");
+                setTimeout(() => {
+                    item.classList.remove("clicked");
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>

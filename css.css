@@ -1,0 +1,165 @@
+
+     *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     }
+ 
+
+     nav{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+
+
+   nav a{
+   color: black;
+   text-decoration: none;
+   padding: 0px 59px 10px 0;
+   font-size: 25pt;
+   position: relative;
+
+    }
+    nav a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.5s ease-in-out;
+ 
+ }
+      nav a:hover::after{
+      width: 100%;  }
+        body{
+            background-color: #000000;
+            nav-down: auto;
+        }
+
+        body
+        {
+            font-family: Arial, sans-serif;
+            background-color: rgb(189, 230, 214);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        nav{
+         text-align: center;
+       
+        }
+        h1, h2 {
+            color: #555;
+            font-weight: 400;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 20px auto;
+            color: #7c7878;
+        }
+          a {
+            color: #000000; /* Cor do texto do link */
+            text-decoration: none; /* Remove o sublinhado padrão do link */
+            font-weight: bold;
+            background-color: transparent;
+        }
+        
+        a:hover {
+            text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+            color: #000000; /* Cor do link quando o mouse passa por cima */
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: transparent;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            max-width: 300px;
+        }
+
+        li {
+            background-color: rgb(189, 230, 214);
+            border: 1px solid transparent;
+            border-radius: 10px;
+            margin: 10px 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        li:hover {
+            transform: scale(1.03);
+            background-color: rgb(170, 220, 204);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+      
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            width: 300%;
+            height: 300%;
+            padding: 5px;
+        }
+
+        .social-link img {
+            width: 30px;
+            height: 30px;
+            margin-right: 12px;
+        }
+
+        .social-link span {
+            color: #333;
+        }
+
+        .social-link strong {
+            color: #000000;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 25%;
+            margin-bottom: 20px;
+            border: 3px solid rgb(189, 230, 214)
+        }
+
+        @keyframes clickEffect {
+            0% { transform: scale(1); box-shadow: 0 0 0 transparent; }
+            50% { transform: scale(0.95); box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+            100% { transform: scale(1); box-shadow: 0 0 0 transparent; }
+        }
+
+        li.clicked {
+            animation: clickEffect 0.3s ease;
+        }
